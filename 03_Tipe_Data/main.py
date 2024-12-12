@@ -173,7 +173,7 @@ print (impian.split())
 
 
 
-# =======================================2. Tipe Data integer (int)================================== 
+# ======================================= 2. Tipe Data integer (int) ================================== 
 """
 
 Tipe Data Integer (int) sering digunakan untuk menuliskan sebuah angka bulat (tanpa desimal) baik poitif atau negatif asalkan tidak desimal maka akan bisa kalian gunakan dan jalankan. Tipe Data Integer juga sering disebut dengan Tipe Data Angka Satuan, nah Tipe Data Integer tidak boleh menggunaka String atau tanda kutip ganda karena itu akan membuat miss komunikasi antara kompeter dan syntax yang kita buat, maka hindarilah menggunakan tanda kutip ganda jika kamu ingin membuat sebuah Tipe Data Integer (int). Ciri cirinya bisa kita lihat yaitu 1. Bilangan Bulat: Tidak mengandung bagian desimal. 2. Rentang Luas: Python dapat menyimpan bilangan bulat dalam rentang yang sangat besar, dibatasi hanya oleh memori yang tersedia. 3. Operasi Matematika: Integer mendukung semua operasi aritmetika dasar seperti penjumlahan, pengurangan, perkalian, dan sebagainya.
@@ -261,25 +261,37 @@ print("Bukan sulap bukan sihir tapi dari string bisa jadi integer keren bukan ",
 
 
 
-# =======================================3. Tipe Data FLoat================================== 
+# ======================================= 3. Tipe Data FLoat ================================== 
 """
 Tipe Data Float adalah Tipe Data yang digunakan atau menuliskan sebuah angka yang desimal atau pecahan, ciri ciri Tipe Data ini adalah selalu menggunakan titik, ya namanya juga bilangan desimal atuh kang. Perlu kalian ingat juga float sama dengan integer bisa menggunakan negatif atau positif. Dapat mewakili nilai yang lebih besar atau lebih kecil dengan ketelitian tinggi. Digunakan dalam komputasi matematika dan statistik.
 """
 
+# Pembatas
+contoh_float = "= <Tipe Data Float>"
+print (contoh_float)
+
 # Contoh Tipe Data Float
+contoh_float = "= Contoh Tipe Data Float"
+print (contoh_float)
+
+# Contoh Penerapannya
 a = 3.14     # Float positif
 b = -0.75    # Float negatif
 c = 0.0      # Float nol
 
+# Outputnya
 print(a)     # Output: 3.14
 print(b)     # Output: -0.75
 print(c)     # Output: 0.0
 
-# Operasi Math Float
+# --------------------------------------- Menggunakan Operasi (aritmatika) ke dalam Tipe Data Float---------------------------------
 # Sama saja seperti integer float dapat kita gabungkan dengan operasi matematika tetapi ada tambahana untuk float.
 
 # Pembagian (/) inilah tambahanya
+bagi = "> Ini adalah contoh pembagian (/) inilah tambahanya"
+print (bagi)
 
+# Contoh Penerapannya
 pembagian = 7.5 / 2.5
 print(pembagian) # Output: 3.0
 
@@ -304,14 +316,24 @@ print(w) # Output: 0.0
 """
 Tipe Data Boolean adalah Tipe Data yang hanya memeiliki dua nilai True (menyatakan kebenaran atau kondisi yang benar) dan False (menyatakan kebohongan atau kondisi yang salah). Tipe Data Boolean biasanya digunakan untuk perbandingan atau mewakili logika dalam program. Boolean sangat sering digunakan dalam perbandingan antara dua nilai, yang akan menghasilkan true atau false. Berikut adalah operator perbandingaan (assignment) yang menhasilkan nilai boolean 1. (==) Sama Dengan 2. (!=) Tidak Sama Dengan 3. (>) Lebih Besar Dari 4. (<) Lebih Kecil Dari 5. (>=) Lebih Besar Atau Sama Dengan 6. (<=) Lebih Kecil Atau Sama Dengan.
 """
+
+# Pembatas
+contoh_boolean = "= <Tipe Data Boolean>"
+print (contoh_boolean)
+
 # Contoh Tipe Data Booolean
+contoh_boolean = "= Contoh Tipe Data Booolean"
+print (contoh_boolean)
+
+# Contoh Penerapannya
 benar = True
 salah = False
 
+# Outputnya
 print(benar)  # Output: True
 print(salah)  # Output: False
 
-# Contoh Boolean dalam operasi perbandingan (Assignment)
+# # --------------------------------------- Menggunakan Operasi (aritmatika) ke dalam Tipe Data Boolean (bool)---------------------------------
 
 x = 10
 y = 5
@@ -329,12 +351,16 @@ print(x == y)  # Output: False
 3. not (Kebalikan)
 """
 
-# Operator Logika and
+# ------------------------------------------------------------- Operator Logika and (Dan) ---------------------------------------
 """
+
 > Operator Logika and (dan)
+
 Penjelasannya adalah: 
+
 1. and mengembalikan True hanya jika semua Kondisi dalah True
 2. Jika salah satu kondisi False, maka hasilnya False
+
 """
 
 # Pembatas
@@ -348,21 +374,29 @@ b = False
 print (a and b) # Output False karena salah satu kondisi false
 
 # Contoh lebih rinci 
+contoh = "> Contoh Lebih Rinci"
+print (contoh)
+
 x = 10
 b = 15
 z = 1
 j = 90
 
+# Outputnya
 print (x < b and z < j) # Output True (Karena kedua kondisi memang benar)
 print (x > j and z < b) # Outputnya False (Karena salah satu kondisi salah)
 print ( x > b and z > j) # Outputnya False (Karena keduanya sama sama salah)
 
-# Operator Logika or
+# ------------------------------------------------------------- Operator Logika or (Atau) ---------------------------------------
 """
+
 > Operator Logika or (Atau)
+
 Penjelasannya :
+
 1. or akan mengembalikan True jika seidaknya ada satu dari kondisi adalah True, begitupun dengan sebaliknya
 2. Mengembalikan False hanya jika semua kondisi adalah False. Begitupun sebaliknya
+
 """
 
 # Pembatas biar gak bingung euy
@@ -376,19 +410,29 @@ b = False
 print(a or b)  # Output: True
 
 # Contoh Lebih Rinci
+contoh = "> Contoh Lebih Rinci"
+print (contoh)
+
 c = 100
 d = 78
 f = 56 
 h = 304
 
+# Outputnya
+print (c > d or f > h) # Output True (Karena salah satu kondisi benar)
 print (c > f or d < h) # Output True (Karena kedua kondisi benar)
 print (f < d or f > h) # Output True (Karena salah satu kondisi benar)
 
-# Operator Logika not 
+# ------------------------------------------------------------- Operator Logika not (negasi/Sebaliknya) ---------------------------------------
 """
+
 > Operator Logika not (sebaliknya)
+
+Penjelasannya :
+
 1. Jika True, hasilnya menjadi False.
 2. 	•	Jika False, hasilnya menjadi True.
+
 """
 
 # Batas deui soalna bingung pisan abi
@@ -398,6 +442,7 @@ print (nota)
 # Contoh Logika not 
 a = True
 b = False
+
 print(not a)  # Output: False karena (not) merupakan negasi atau kebalikan dari kondisi sebenarnya
 print(not b)  # Output: True
 
@@ -405,7 +450,9 @@ print(not b)  # Output: True
 
 # ========================================5. Tipe Data List====================================
 """
+
 Tipe Data List adalah Salah satu tipe data yang digunakan untuk menyimpan sekumpulan item (atau elemen) dalam satu variabel. Yang dimana bisa mengelompokan berbagai jenis Tipe Data seperti  string, integer, float dan boolean bahkan Tipe Data lainnya kedalam satu variable.  List bisa berisi data yang terurut dan dapat diubah, yang artinya kita bisa menambah, menghapus, atau mengubah item di dalamnya. List ditandai dengan tanda kurung siku [], dan setiap elemen di dalamnya dipisahkan dengan koma. 
+
 """
 
 # Contoh Tipe Data List
@@ -441,5 +488,3 @@ print(nama_siswa)
 # Menyisipkan elemen pada indeks tertentu
 nama_siswa.insert(1, "Bener Pisan")
 print(nama_siswa)
-
-print((5 > 3) or (2 * 2 == 5) and not (10 < 20))
