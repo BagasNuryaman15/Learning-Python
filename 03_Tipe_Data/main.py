@@ -1,33 +1,94 @@
 # -----------------------------------------------Tipe Data-----------------------------------------------
-"""Tipe Data adalah jenis informasi yang dapat di simpan kedalam variable.  Tipe data adalah cara Python mengklasifikasikan data yang kita gunakan dalam program. Tipe data menentukan jenis nilai yang dapat disimpan dalam variabel, serta bagaimana Python memproses data tersebut. Di Python, ada beberapa tipe data dasar yang sering digunakan dalam berbagai aplikasi, termasuk dalam pengembangan AI dan Machine Learning."""
+"""
 
-# =======================================1. Tipe Data String (str)================================== 
+Tipe Data adalah jenis informasi yang dapat di simpan kedalam variable.  Tipe data adalah cara Python mengklasifikasikan data yang kita gunakan dalam program. Tipe data menentukan jenis nilai yang dapat disimpan dalam variabel, serta bagaimana Python memproses data tersebut. Di Python, ada beberapa tipe data dasar yang sering digunakan dalam berbagai aplikasi, termasuk dalam pengembangan AI dan Machine Learning.
+
+"""
+
+
+
+# --------------------------------------- Markle Tree Pada Tipe Data -------------------------------
+
+"""
+
+1.  Tipe Data None
+    Tipe Data None adalah tipe data yang hanya memiliki satu nilai yaitu None. Tipe data None digunakan untuk menandai bahwa sebuah variabel tidak memiliki nilai apa pun. Tipe data None digunakan dalam beberapa kasus, seperti ketika sebuah variabel tidak memiliki nilai yang benar-benar diperoleh dari pengguna atau karena kesalahan pada program.
+
+2.  Tipe Data Numeric
+    Tipe Data Numeric adalah tipe data yang memiliki nilai numerik, yaitu bilangan bulat, bilangan desimal, dan bilangan kompleks. Tipe data numeric digunakan untuk menyimpan nilai numerik, seperti angka, desimal, dan bilangan kompleks. Tipe data numeric dibagi menjadi 2 yaitu : Int (Bilangan bulat) dan Float (Bilangan desimal).
+
+3.  Tipe Data Boolean 
+    Tipe Data Boolean adalah tipe data yang memiliki 2 nilai yaitu Benar (True) atau Salah (False). Tipe data Boolean digunakan untuk menyimpan nilai logika, yaitu nilai yang bernilai benar atau salah. Tipe data Boolean digunakan dalam beberapa kasus, seperti ketika sebuah variabel harus memiliki nilai benar atau salah. Tipe Data ini hanya satu yaitu : Bool
+
+4.  Tipe Data Sequence 
+    Tipe Data Sequence adalah tipe data yang memiliki nilai yang berupa kumpulan nilai yang berurutan. Tipe data sequence digunakan untuk menyimpan nilai yang berupa kumpulan nilai yang berurutan, seperti list, tuple, dan string. Tipe data sequence dibagi menjadi 3 yaitu : List, Tuple, dan String.
+
+5.  Tipe Data Set 
+    Tipe Data Set adalah tipe data yang memiliki nilai yang berupa kumpulan nilai yang tidak berurutan. Tipe data set digunakan untuk menyimpan nilai yang berupa kumpulan nilai yang tidak berurutan, seperti set, dan frozenset. Tipe data set dibagi menjadi 2 yaitu : Set dan Frozenset.
+
+6.  Tipe Data Mapping
+    Tipe Data Mapping adalah tipe data yang memiliki nilai yang berupa kumpulan nilai yang terdiri dari pasangan key dan value. Tipe data mapping digunakan untuk menyimpan nilai yang berupa kumpulan nilai yang terdiri dari pasangan key dan value, seperti dictionary. Tipe data mapping dibagi menjadi 2 yaitu : Dictionary dan Defaultdict.
+
+7.  Tipe Data Binary
+    Tipe Data Binary adalah tipe data yang memiliki nilai yang berupa kumpulan nilai yang terdiri dari bit. Tipe data binary digunakan untuk menyimpan nilai yang berupa kumpulan nilai yang terdiri dari bit, seperti bytearray, bytes, memoryview. Tipe data binary dibagi menjadi 3 yaitu : Bytearray, Bytes, dan Memoryview.
+
+"""
+
+
+
+# ---------------------------------------- Penjelasan Terkait Berbagai Tipe Data -----------------------
+
+
+
+# ======================================= 1. Tipe Data String (str) ======================================
 """ 
 Tipe Data String sering digunakan untuk menulis sebuah kumpulan teks atau karakter dengan cirinya adalah di kelilingi oleh tanda kutip ganda (" Contoh ") dan tanda kutip tunggal (' Contoh '), String juga bersifat imutable (Tidak bisa diubah) setelah string dibuat isinya tidak dapat dirubah, Bisa menggunakan tanda kutip kosong dan bisa menggunakan spasi. Nah kita bisa menggunakan tanda kutip ganda dan tunggal secara bersamaan, namun perlu kalian ingat jika kalian mencampuri keduanya kalian akan kebingunan sendiri, maka disini saya akan memakai tanda kutip ganda saja (" "). Nah karaktersitiknya yaitu 1. Teks atau urutan karakter. 2. Dapat mencakup huruf, angka, simbol, dan spasi.
 """
 
+# Pembatas
+string = "<Tipe Data String (str)>"
+print (string)
+
 # Contoh Tipe Data STRING (str)
+contoh_str = "= Contoh Tipe Data String (str)"
+print (contoh_str)
+
+# Contoh Penerapannya
 nama = "Jajang"
 pesan = 'Semangat DEK! Jangan Kau Leha Leha Mau Jadi Apa Kau!'
 string_kosong = " "
 
+# Outputnya
 print("Nama saya adalah", nama) # Output: Jajang
 print("Nih Temen Temen dapat salam dari saya ", pesan) # Output: Semangat Dek! Jangan Kau Leha Leha Mau jadi Apa kau
 print(string_kosong) # Output: (tidak ada output)
 
-# Kita bisa menggunakan operasi aritmatika atau matematika kepada String namun penggunaannya sangat berbeda dari yang lainnya
+
+# --------------------------------------- Menggunakan Operasi (aritmatika) ke dalam Tipe Data String (str)---------------------------------
+
 # Menggabungkan String  (Concatenation): Gunakan tanda (+) untuk menggabungkan dua tipe data String.
+Connect = "-Ini adalah contoh menggabungkan string (Concatenation)"
+print (Connect)
+
+# Contoh Penerapannya
 nama_depan = "Jajang"
 nama_belakang = "Sutisna"
 nama_lengkap = nama_depan + " " + nama_belakang
 print(nama_lengkap)  # Output: Jajang Sutisna
 
 # Mengulang String : Menggunakan tanda (*) untuk mengulangi string
+loop = "-Ini adalah contoh mengulang string"
+print (loop)
+# Contoh Penerapannya
 salam = "nipon paint! "
 pengulangan = salam * 7
-print (pengulangan)
+print (pengulangan) # Output nipon paint! nipon paint! nipon paint! nipon paint! nipon paint! nipon paint! nipon paint!
 
 # Mengambil Karakter String hanya di bagian tertentu 
+select = "-Ini adalah contoh mengambil karakter string"
+print (select)
+
+# Contoh Penerapannya
 Kata = "Aku mah apa atuh"
 print (Kata[2]) # Output u
 print (Kata[-1]) # Output h karena min berarti mundur
@@ -35,39 +96,78 @@ kata_kata = Kata[2] + "" + Kata[-1] # Output gambungkan biar mantep jadi uh
 print (kata_kata)
 
 # Memotong String (Slicing) : Mengambil bagian dari string.
+slice = "-Ini adalah contoh memotong string"
+print (slice)
 
+# Contoh Penerapannya
 slicing = "Akumah apa atuh hirup ge dahar ranginang mang"
 print (slicing[0:6]) # Output Akumah
 print (slicing[7:10]) # Output apa
 print (slicing[:31]) # Output Akumah apa atuh hirup ge dahar 
 
 # Menghitung Panjang String : Dengan menggunakan fungsi len(value)
-ngarang = "Aku adalah lelaki tengah malam, ibuku harimau bapak ku singa, aku sering kali di juluki menjadi raja dunia"
-print(len(ngarang)) # Cobaan we ku nyalira nya cape
+panjang = "-Ini adalah contoh menghitung panjang string"
+print (panjang)
 
-# Nah di Tipe Data String ada juga yang namanya Metode String yang dimana python memiliki banyak metode bawaan untuk memanipulasi sebuah Tipe Data String
+# Contoh Penerapannya
+ngarang = "Aku adalah lelaki tengah malam, ibuku harimau bapak ku singa, aku sering kali di juluki menjadi raja dunia"
+print(len(ngarang)) # Output Cobaan we ku nyalira nya cape loba kana 100+
+
+# -------------------------------------------------- Metode String -------------------------------------------------------
+
+""" 
+
+Nah di Tipe Data String ada juga yang namanya Metode String yang dimana python memiliki banyak metode bawaan untuk memanipulasi sebuah Tipe Data String.
+
+"""
+
+# Contoh dan penjelasan metode string Dasar
+
 # .upper (Value) - Mengubah teks String menjadi huruf Besar
+upper = "> Ini adalah contoh mengubah teks string menjadi huruf besar"
+print (upper)
+
+# Contoh Penerapannya
 upper = "Halow Mamng"
 print (upper.upper()) # Output HALOW MAMANG
 
 # .lower (value) - Mengubah String menjadi huruf kecil
+lower = "> Ini adalah contoh mengubah teks string menjadi huruf kecil"
+print (lower)
+
+# Contoh Penerapannya
 lower = "MERENDAH KIEU Si eMaNg"
 print(lower.lower())
 
 # .capitalize() – Mengubah huruf pertama menjadi besar.
+capitalize = "> Ini adalah contoh mengubah huruf pertama menjadi besar"
+print (capitalize)
+
+# Contoh Penerapannya
 cap = "aku adalah aku"
 print (cap.capitalize())
 
 # .strip() – Menghapus spasi di awal dan akhir string.
+strip = "> Ini adalah contoh menghapus spasi di awal dan akhir string"
+print (strip)
+
+# Contoh Penerapannya
 strip = "              nyaan ieumah magic        "
 print(strip.strip())
 
 # .replace() – Mengganti bagian dari string.
+replace = "> Ini adalah contoh mengganti bagian dari string"
+print (replace)
 
+# Contoh Penerapannya
 re = "Aku sayang nanad"
 print (re.replace("nanad", "jihyo"))
 
 # 	.split() – Memecah string menjadi list berdasarkan pemisah tertentu.
+split = "> Ini adalah contoh memecah string menjadi list berdasarkan pemisah tertentu"
+print (split)
+
+# Contoh Penerapannya
 impian = "AI,Machine Learning,Blockchain"
 print (impian.split())
 
@@ -75,40 +175,76 @@ print (impian.split())
 
 # =======================================2. Tipe Data integer (int)================================== 
 """
+
 Tipe Data Integer (int) sering digunakan untuk menuliskan sebuah angka bulat (tanpa desimal) baik poitif atau negatif asalkan tidak desimal maka akan bisa kalian gunakan dan jalankan. Tipe Data Integer juga sering disebut dengan Tipe Data Angka Satuan, nah Tipe Data Integer tidak boleh menggunaka String atau tanda kutip ganda karena itu akan membuat miss komunikasi antara kompeter dan syntax yang kita buat, maka hindarilah menggunakan tanda kutip ganda jika kamu ingin membuat sebuah Tipe Data Integer (int). Ciri cirinya bisa kita lihat yaitu 1. Bilangan Bulat: Tidak mengandung bagian desimal. 2. Rentang Luas: Python dapat menyimpan bilangan bulat dalam rentang yang sangat besar, dibatasi hanya oleh memori yang tersedia. 3. Operasi Matematika: Integer mendukung semua operasi aritmetika dasar seperti penjumlahan, pengurangan, perkalian, dan sebagainya.
+
 """
 
+
+# Pembatas
+contoh_int = "= <Tipe Data Integer (int)>"
+print (contoh_int)
+
 # Contoh Tipe Data Integer (int)
+contoh_int = "= Contoh Tipe Data Integer (int)"
+print (contoh_int)
+
+# Contoh Penerapannya
 a = 10     # Integer positif
 b = -3     # Integer negatif
 c = 0      # Nol
 
+# Outputnya
 print(a)   # Output: 10
 print(b)   # Output: -3
 print(c, type(c))   # Output: 0
 
-# Operasi Dengan Integer (int)
+# --------------------------------------- Menggunakan Operasi (Math) ke dalam Tipe Data Integer (Int)---------------------------------
 # Penjumlahan (+)
+plus = "> Ini adalah contoh penjumlahan (+)"
+print (plus)
+
+# Contoh Penerapannya
 plus = 100 + 67
 print (plus)
 
 # Pengurangan (-)
+minus = "> Ini adalah contoh pengurangan (-)"
+print (minus)
+
+# Contoh Penerapannya
 mins = 900 - 2233
 print (mins)
 
 # Perkalian (*)
+kali = "> Ini adalah contoh perkalian (*)"
+print (kali)
+
+# Contoh Penerapannya
 kali = 100* 367
 print (kali) 
 
 # Pembagian Bulat (//)
+bagi = "> Ini adalah contoh pembagian bulat (//)"
+print (bagi)
+
+# Contoh Penerapannya
 bagi = 100 // 7
 print (bagi) # Output 14 (Karena pembagian tanpa desimal)
 
 # Pemangkatan (**)
+pangkat = "> Ini adalah contoh pemangkatan (**)"
+print (pangkat)
+
+# Contoh Penerapannya
 pangkat = 3 ** 8
 print (pangkat) # Output 6561 (3 pangkat 8)
 
 #Modulus (%)
+modulus = "> Ini adalah contoh modulus (%)"
+print (modulus)
+
+# Contoh Penerapannya
 modulus = 10 % 3
 print(modulus)  # Output: 1 (sisa hasil pembagian)
 
@@ -185,6 +321,7 @@ print (y < x) # Output True
 print(x == y)  # Output: False
 
 # Contoh Boolean dalam Operasi Logika: Operasi logika digunakan untuk melakukan perhitungan berdasarkan nilai Boolean (True atau False). Operasi ini penting untuk membuat keputusan dalam pemrograman.
+
 """
 > Python memiliki tiga Operator Logika Utama:
 1. and (Dan)
@@ -199,6 +336,7 @@ Penjelasannya adalah:
 1. and mengembalikan True hanya jika semua Kondisi dalah True
 2. Jika salah satu kondisi False, maka hasilnya False
 """
+
 # Pembatas
 ands = "Ini adalah Logika and (Dan)"
 print (ands)
