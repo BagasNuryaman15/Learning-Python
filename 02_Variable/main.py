@@ -1,11 +1,35 @@
-# ------------------------------------------Variable Python----------------------------------
+# ------------------------------------------------Variable Python----------------------------------
 """ 
+Definisi dari variabel merujuk kepada lokasi dalam komputer yang digunakan untuk menyimpan nilai dengan tipe data tertentu. Ketika menuliskan variabel, Kamu telah memerintahkan komputer untuk mencari dan memesan ruang kosong dalam komputer yang nantinya akan diisi nilai atau data. Pembuatan variabel sangat erat kaitannya dengan proses assignment. Ketika kamu memesan ruang kosong di dalam komputer, tentu harusnya ruang kosong tersebut diisi oleh nilai dan bukan dikosongkan. Tujuan dari pembuatan variabel adalah menyimpan nilai yang nantinya dapat digunakan secara berulang. Sekarang, mari membahas assignment. Sebagaimana yang dijelaskan sebelumnya bahwa variabel sangat erat kaitannya dengan assignment.
 
-Secara umum variable adalah suatu nama yang bisa kita gunakan untuk menyimpan sebuah nilai atau data yang nantinya kita bisa gunakan atau ubah disaat program berjalan. Bisa saya contohkan dengan di bawah ini. Nah jika di Python angka dan nama yang kita simpan dinamakan dengan Tipe Data dan ada juga namanya assigment.
+Secara umum variable adalah suatu nama yang bisa kita gunakan untuk menyimpan sebuah nilai atau data yang nantinya kita bisa gunakan atau ubah disaat program berjalan. Dalam Python, setiap kode adalah instruksi untuk memberi tahu komputer hal yang harus dilakukan selanjutnya.
 
 """
 
-# ------------------------------- Rule Dalam Variable Python ----------------------
+# ------------------------------------------------------ Assigenment --------------------------------------
+""" 
+Assignment merupakan proses pemberian atau penetapan nilai pada sebuah variabel. Dalam Python, proses melakukan assignment dapat mengikuti formula berikut.
+
+<Ruas Kiri> = <Ruas Kanan>
+1. Ruas kiri adalah variabel.
+2. Ruas kanan adalah ekspresi/nilai/variabel yang sudah jelas nilainya.
+
+"""
+
+# ---------------------------------------------------- Input Dan Output ---------------------------------
+""" 
+
+Pada bagian ini, Kita akan belajar tentang sebuah variabel yang nilainya tidak ditentukan oleh Kita sebagai programmer, tetapi ditentukan oleh pengguna. Variabel ini disebut dengan variabel input. Dalam Python, Kita dapat menggunakan fungsi input() untuk mengambil input dari pengguna. Contoh penggunaan fungsi input() adalah sebagai berikut. 
+
+"""
+
+
+nama = input("Saha Ngaran Teh Jang: ")
+print("Oh", nama,"Sing konsisten bageur nya diajar na meh bisa membahagiakan orang tua")
+
+
+
+# -------------------------------------------------Rule Dalam Variable Python ---------------------------
 """ 
 1. Nama dari sebuah variabel harus dimulai dengan huruf (a-z, A-Z) atau karakter garis bawah/underscore (_) dan tidak dapat dimulai dengan angka (0-9).
 

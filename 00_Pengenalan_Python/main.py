@@ -1,20 +1,21 @@
 # ================================================ Apa Itu Python ========================================
 """
 
-Python adalah bahasa pemrograman yang ditujukan untuk general-purpose programming dan termasuk dalam kategori high-level programming language.
-> Sebagai general-purpose programming language, Python digunakan untuk berbagai macam permasalahan seperti: pengembangan aplikasi web ataupun mobile, data science, dll.
-
-> Python masuk ke dalam kategori high-level programming language dikarenakan bahasa pemrograman Python yang mudah untuk dibaca dan dituliskan oleh manusia.
-
-Bahasa  pemrograman  Python  diciptakan  oleh  Guido  van Rossum dan pertama kali diperkenalkan pada tahun 1991 sebagai sebuah proyek open-source. Lisensi dari Python bersifat open-source dari Python, atau dengan kata lain setiap orang dapat mengembangkan program komputer dengan menggunakan bahasa pemrograman Python baik untuk tujuan komersil/non-komersil.
+Python adalah bahasa pemrograman multifungsi yang dirilis pada tahun 1991 oleh Guido van Rossum (GvR). Beliau membuat Python sebagai bahasa pemrograman yang mudah dibaca dan dimengerti (readable) serta memiliki kemampuan penanganan kesalahan (exception handling). Berdasarkan tujuan tersebut, Guido van Rossum berhasil  menjadikan Python sebagai bahasa pemrograman yang dapat diimplementasikan ke dalam berbagai sektor. Python dapat digunakan untuk membangun website (server-side), analisis data, hingga pembelajaran mesin (machine learning). 
 
 """
 
-# ------------------------------ Kaitan Python Dengan Data Science ----------------------------------
+# --------------------------------------------Ciri Khas Python ----------------------------------
+"""
+Python memiliki ciri khas tersendiri sebagai salah satu pemrograman populer. Salah satu ciri khas yang paling dikenal adalah Python tidak mewajibkan penggunaan titik koma atau semi colon (;) pada setiap akhir kode programnya. Simak sintaks kode program di bawah.
+
 """
 
-Python adalah bahasa yang ditujukan untuk general-purpose programming, jenis high-level programming language dan berlisensi open source.
-Karena tiga karakteristik itulah, banyak pengembang membuat library python ditujukan untuk data science dan tentunya memudahkan pengguna dalam melakukan analisis dan membuat model prediktif dalam data science. 
+print ("Hello World")
+
+"""
+
+Sintaks tersebut memberikan perintah untuk menampilkan/mencetak pesan berupa teks ke layar komputer. Perhatikan bahwa sintaks tersebut menggunakan kata “print” yang jika diterjemahkan ke dalam bahasa Indonesia memiliki arti mencetak. Sebagaimana yang sudah dijelaskan, "print()" merupakan sintaks untuk memberikan perintah menampilkan pesan ke layar komputer. Pesan yang ingin Anda sampaikan bisa beragam, salah satunya adalah teks di atas yang menampilkan kalimat “Hello World!”. 
 
 """
 
