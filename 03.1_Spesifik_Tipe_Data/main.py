@@ -27,12 +27,14 @@
 
 
 # ======================================= 1. Tipe Data String (str) ======================================
+print("Tipe Data String(str)".center(150, "="))
+
 """ 
 Tipe Data String sering digunakan untuk menulis sebuah kumpulan teks atau karakter dengan cirinya adalah di kelilingi oleh tanda kutip ganda (" Contoh ") dan tanda kutip tunggal (' Contoh '), String juga bersifat imutable (Tidak bisa diubah) setelah string dibuat isinya tidak dapat dirubah, Bisa menggunakan tanda kutip kosong dan bisa menggunakan spasi. Nah kita bisa menggunakan tanda kutip ganda dan tunggal secara bersamaan, namun perlu kalian ingat jika kalian mencampuri keduanya kalian akan kebingunan sendiri, maka disini saya akan memakai tanda kutip ganda saja (" "). Nah karaktersitiknya yaitu 1. Teks atau urutan karakter. 2. Dapat mencakup huruf, angka, simbol, dan spasi.
 """
 
 # Pembatas
-string = "<Tipe Data String (str)>"
+string = ("<Tipe Data String (str)>".center(50, "-"))
 print (string)
 
 # Contoh Tipe Data STRING (str)
@@ -50,10 +52,11 @@ print("Nih Temen Temen dapat salam dari saya ", pesan) # Output: Semangat Dek! J
 print(string_kosong) # Output: (tidak ada output)
 
 
-# --------------------------------------- Menggunakan Operasi (aritmatika) ke dalam Tipe Data String (str)---------------------------------
+# --------------------------------------- Menggunakan Operasi (aritmatika) ke dalam Tipe Data String (str) ---------------------------------
+print("Menggunakan Operasi (aritmatika) le dalam Tipe Data String(str)".center(150, "*"))
 
 # Menggabungkan String  (Concatenation): Gunakan tanda (+) untuk menggabungkan dua tipe data String.
-Connect = "-Ini adalah contoh menggabungkan string (Concatenation)"
+Connect = "> Ini adalah contoh menggabungkan string (Concatenation)"
 print (Connect)
 
 # Contoh Penerapannya
@@ -63,7 +66,7 @@ nama_lengkap = nama_depan + " " + nama_belakang
 print(nama_lengkap)  # Output: Jajang Sutisna
 
 # Mengulang String : Menggunakan tanda (*) untuk mengulangi string
-loop = "-Ini adalah contoh mengulang string"
+loop = "> Ini adalah contoh mengulang string"
 print (loop)
 # Contoh Penerapannya
 salam = "nipon paint! "
@@ -71,7 +74,7 @@ pengulangan = salam * 7
 print (pengulangan) # Output nipon paint! nipon paint! nipon paint! nipon paint! nipon paint! nipon paint! nipon paint!
 
 # Mengambil Karakter String hanya di bagian tertentu 
-select = "-Ini adalah contoh mengambil karakter string"
+select = "> Ini adalah contoh mengambil karakter string"
 print (select)
 
 # Contoh Penerapannya
@@ -82,7 +85,7 @@ kata_kata = Kata[2] + "" + Kata[-1] # Output gambungkan biar mantep jadi uh
 print (kata_kata)
 
 # Memotong String (Slicing) : Mengambil bagian dari string.
-slice = "-Ini adalah contoh memotong string"
+slice = "> Ini adalah contoh memotong string"
 print (slice)
 
 # Contoh Penerapannya
@@ -92,14 +95,15 @@ print (slicing[7:10]) # Output apa
 print (slicing[:31]) # Output Akumah apa atuh hirup ge dahar 
 
 # Menghitung Panjang String : Dengan menggunakan fungsi len(value)
-panjang = "-Ini adalah contoh menghitung panjang string"
+panjang = "> Ini adalah contoh menghitung panjang string"
 print (panjang)
 
 # Contoh Penerapannya
 ngarang = "Aku adalah lelaki tengah malam, ibuku harimau bapak ku singa, aku sering kali di juluki menjadi raja dunia"
 print(len(ngarang)) # Output Cobaan we ku nyalira nya cape loba kana 100+
 
-# -------------------------------------------------- Metode String -------------------------------------------------------
+# --------------------------------------------------------------------- Transform -----------------------------------------------------------------------
+print("TRANSFORM VALUE".center(150, "*"))
 
 """ 
 
@@ -107,7 +111,11 @@ Nah di Tipe Data String ada juga yang namanya Metode String yang dimana python m
 
 """
 
-# Contoh dan penjelasan metode string Dasar
+# -------------------------------- Mengubah Huruf Besar/Kecil -----------------------------------
+print("Mengubah Huruf Besar Atau Kecil".center(150, "-"))
+'''
+Dalam kategori ini terdapat beberapa metode yang dapat digunakan untuk mengubah string menjadi huruf kapital (UPPERCASE) atau huruf kecil (lowercase). Kedua metode ini, baik upper() maupun lower() adalah metode bawaan dari string Python. Perlu diingat bahwa jika terdapat karakter bukan huruf (seperti simbol atau angka) yang tidak memiliki opsi kapital sehingga karakter tersebut tidak diubah.
+'''
 
 # .upper (Value) - Mengubah teks String menjadi huruf Besar
 upper = "> Ini adalah contoh mengubah teks string menjadi huruf besar"
@@ -133,6 +141,13 @@ print (capitalize)
 cap = "aku adalah aku"
 print (cap.capitalize())
 
+# ------------------------------- Awalan dan Akhiran ---------------------------
+print("Awal Dan Akhiran String".center(150, "-"))
+
+''' 
+Dalam kategori ini terdapat beberapa metode yang dapat digunakan untuk mengubah string menjadi huruf kapital (UPPERCASE) atau huruf kecil (lowercase). Kedua metode ini, baik upper() maupun lower() adalah metode bawaan dari string Python. Perlu diingat bahwa jika terdapat karakter bukan huruf (seperti simbol atau angka) yang tidak memiliki opsi kapital sehingga karakter tersebut tidak diubah.
+'''
+
 # .strip() – Menghapus spasi di awal dan akhir string.
 strip = "> Ini adalah contoh menghapus spasi di awal dan akhir string"
 print (strip)
@@ -140,6 +155,40 @@ print (strip)
 # Contoh Penerapannya
 strip = "              nyaan ieumah magic        "
 print(strip.strip())
+
+# Nah jika kalian ingin menghapus spasi atau whitespace dari kanan dan kiri saja maka kalian bisa menggunakan rstrip() dan lstrip()
+
+# .starswith() - menemukan suatu kata pada awal string. Metode ini mengembalikan nilai True.
+print ("> Ini Adalah Contoh Menggunakan starwith()")
+print ("Bagas Ganteng".startswith("Bagas"))
+
+# Output : True, karena string yang bertuliskan Bagas memang ada pada awal kalimat Bagas Ganteng.  Jika awalan nya bukan string yang sama maka hasilnya akan False
+# Nah ada juga yang mencari akhiran kata, kita bisa menggunakan endswith (). 
+
+# ------------------------------- Memisah dan Menggabung String ---------------------------
+print("Memisah Dan Menggabungkan String".center(150, "-"))
+
+# .join() - Menggabungkan antara beberapa string.
+print("> Ini Adalah Contoh Penggunaan .join()")
+
+jion = ['Awal','Tengah','Akhir','120', ]
+print(''.join(jion))
+
+# Output : AwalTengahAkhir120 
+# Pada kode di atas, kita menggabungkan string "Dicoding", "Indonesia", dan "!" yang telah disimpan pada variabel list. Perhatikan bahwa pada sintaks awal sebelum ".join()" kita menambahkan single quotes di sana. Single quotes ini bermaksud agar kita menentukan delimiter pada setiap kata/nilai yang ingin Anda gabungkan. Pada kode di atas, delimiter-nya adalah whitespace atau spasi.
+
+# 	.split() – Memecah string menjadi list berdasarkan pemisah tertentu.
+split = "> Ini adalah contoh memecah string menjadi list berdasarkan split()"
+print (split)
+
+# Contoh Penerapannya
+impian = " AI MachineLearning Blockchain"
+print (impian.split())
+
+# Output : ['AI', 'MachineLearning', 'Blockchain'], Karena split() ini kebalikan dari join maka setiap string atau kata yang memiliki whitespace akan di pisahkan. Mengapa MachineLearning menyatu, karena dia tidak memiliki whitespace. Dan coba perhatikan string tersebut dimasukan ke dalam list.
+
+# ----------------------------------- Mengganti Elemen String ----------------------------------
+print("Mengganti Elemen String".center(150, "-"))
 
 # .replace() – Mengganti bagian dari string.
 replace = "> Ini adalah contoh mengganti bagian dari string"
@@ -149,13 +198,171 @@ print (replace)
 re = "Aku sayang nanad"
 print (re.replace("nanad", "jihyo"))
 
-# 	.split() – Memecah string menjadi list berdasarkan pemisah tertentu.
-split = "> Ini adalah contoh memecah string menjadi list berdasarkan pemisah tertentu"
-print (split)
+# Outputnya : Aku Sayang jihyo, karena string nanad telah digantikan dengan string jihyo.abs
 
-# Contoh Penerapannya
-impian = "AI,Machine Learning,Blockchain"
-print (impian.split())
+# ------------------------------------------- Pengecekan String -------------------------------------
+print("Pengecekan String".center(150, "-"))
+
+# Kategori selanjutnya bertujuan untuk melakukan pengecekan pada string. Hasil dari kategori ini adalah mengembalikan nilai boolean True/False. 
+
+# -isupper() : akan mengembalikan nilai True jika semua huruf dalam string adalah huruf kapital (uppercase). Sebaliknya, jika ada satu huruf saja yang kecil/tidak uppercase, nilai False akan dikembalikan.
+
+# Contohnya
+print("> Contoh Penerapan (.isupper())")
+print("BAGAS NURYAMAN".isupper())
+
+# Output : True, Karena String di atas memeiliki value yang dimana value nya berupa teks yang UPPPER semuanya. 
+
+# Nah ada juga yang namanya .islower() Kebalikan dari .isupper().
+
+# -.isalpha() : Metode ini mengembalikan nilai True jika semua karakter dalam string adalah huruf alfabet. Jika ada satu huruf lain yang bukan alfabet, seperti angka, nilai False akan dikembalikan.
+
+# Contohnya
+print("> Contoh Penerapan (.isalpha())")
+print("bagas ganteng".isalpha())
+
+# Output : True , Karena Value String memang benar hanya menggunakan alphabet saja, tetapi jika kita menambahkan angka atau Huruf Besar pada awal kalimat maka akan False.
+
+# -isalnum() : Metode isalnum() mengembalikan nilai True jika karakter dalam string adalah alfanumerik, yaitu hanya huruf atau hanya angka atau berisi keduanya. Jika tidak, nilai False akan dikembalikan.
+
+# Contohnya
+print("> Contoh Penerapan (.isalmun())")
+print("Limbangan150902".isalnum())
+
+# Ouput : True, karena value tersebut memiliki teks dengan angka, tetapi jika kamu menambahkan whitespace (spasi) pada keduanya maka .isalmun() akan menganggap bahwa itu kedua kalimat yang berbeda maka akan di kembalikan False
+
+# -isdecimal() : Metode isdecimal() akan mengembalikan nilai True jika karakter dalam string berisi hanya angka/numerik. Jika tidak, nilai False akan dikembalikan.
+
+# Contohnya
+print("> Contoh Penerapan (.isdecimal())")
+print("124".isdecimal())
+
+# Output : True, karena hanya berupa angka/numerik. Uniknya namanya saja yang desimal tetapi ketika kita menambahkan sebuh titik pada salah satu titik maka akan dianggap itu adalah bukan angka atau numerik.
+
+# -isspace() : Metode isspace() akan mengembalikan nilai True jika string hanya berisi whitespace, seperti spasi, tab, newline, atau karakter whitespace lainnya.
+
+# Contohnya
+print("> Contoh Penerapan (.isspace())")
+print("                 ".isspace())
+
+# Output : True, Karena hanya sebuah whitespace
+
+# -istitle() : Metode istitle() mengembalikan nilai True jika string berisi huruf kapital pada setiap kata pertamanya. Jika tidak, nilai False dikembalikan.
+
+# Contohnya
+print("> Contoh Penerapan (.istitle())")
+print("Belajar Machine Learning".istitle())
+
+# Output : True, Karena memiliki huruf kapital maka di anggap itu sebuah title.
+
+# ------------------------------------------ Formatting pada String --------------------------------------
+print("Formating Pada String".center(150, "-"))
+
+# -zfill() : Metode zfill() bertujuan untuk menambahkan nilai nol (0) di depan sebuah string dengan panjang tertentu. Tujuan dari metode ini adalah membantu untuk memastikan bahwa sebuah angka atau nilai memiliki panjang tetap, terutama ketika ingin menyimpan nilai dalam format yang konsisten.
+
+# Contohnya 
+print("> Contoh Penerapan (.zfill())")
+teks = "126"
+contoh_zfill = teks.zfill(5)
+print(contoh_zfill)
+
+'''
+Output : 126
+    1. Variabel teks menyimpan nilai string berupa "126". Perlu dipahami bahwa kata "Code" hanya memiliki 3 huruf atau sederhananya panjang kata "126" adalah 3.
+    2. Variabel tambah_number menyimpan nilai variabel teks dengan memanggil metode zfill(5).  Angka 5 tersebut merupakan parameter untuk menentukan panjang yang diinginkan oleh string. Sederhananya, kita memastikan bahwa panjang kata "126" haruslah 5 dan bukan 3. Jadi, program akan menambahkan angka 0 di depan kata "126" untuk memastikan bahwa panjangnya adalah 5.
+
+    Metode zfill() ini berguna ketika ingin memastikan bahwa angka atau nilai dalam string memiliki panjang tetap dan sesuai dengan format yang diinginkan. Metode zfill() dapat diterapkan untuk menetapkan nomor nota atau nomor antrian.
+'''
+
+# -.rjust() : Metode rjust() berguna untuk merapikan pencetakan teks. Dengan metode rjust() ini, Anda dapat membuat teks menjadi rata kanan sehingga tampilannya lebih rapi.
+
+# Contohnya
+print("> Contoh Penerapan (.rjust())")
+print("Ini Akan Bergeser ketengah karena .rjust(100)".rjust(100))
+
+'''
+Output : Value tersebut bergeser dari kiri ke kanan, nah perlu di ingat bahwa ketika kita menggunakan rjust() maka rumusnya adalah hitung dulu ada berapa indeks dari variable value kita.
+    contoh : Jika kita telah mengetahui bahwa "apa" adalah 3 karena tidak memiliki whitespace maka kita akan mengatur .rjust(5), hasilnya value tersebut akan bergeser 2 spasi dari kiri ke kanan. 
+    
+    Rumusnya (.rjust(Selera inimah Boy) - lens). !Noted, Ini juga bisa kita gunakan untuk .zfill()
+'''
+
+# -.ljust() : Ini adalah kebalikannya dari .rjust()
+
+# Gausah di Contohin lahya
+
+# -.center() : Metode center() menjadikan teks rata tengah. Metode ini akan menambahkan whitespace di sebelah kiri dan kanan secara default. Anda juga bisa mengganti whitespace tersebut dengan karakter lain.
+
+# Contohnya
+print("> Contoh Penerapan (.center())")
+print("Teks Ini Akan Berada Di Tengah Tanpa Mengatur .rjust atau .ljust".center(160))
+
+# Output : Maka Value tersebut akan otomatis berada di tengah tanpa perlu mengatur .ljust() dan .rjust() karena .center() telah memiliki nilai tersebut.abs
+
+# --------------- Noted! -----------------
+# Sekali lagi, kita harus ingat bahwa zfill(), rjust(), ljust(), dan center() berfungsi sama, yakni memastikan panjang teks sesuai dengan yang diminta.
+
+# ----------------------------------------------------- String Literals ---------------------------------------
+print("String Literals".center(150, "-"))
+
+'''
+Umumnya, string ditulis dengan mudah di Python, diapit oleh tanda petik tunggal. Namun, dalam kondisi tertentu, dibutuhkan petik tunggal di tengah string (misalnya, struktur kepemilikan dalam bahasa Inggris your's Cat atau penyebutan Jum'at pada hari dalam bahasa Indonesia).
+
+    Misalnya kita menuliskan : contoh_1 = 'Where Your's Phone'
+
+    Python akan salah mengira bahwa string berakhir setelah huruf r dan selebihnya merupakan kode yang invalid. Namun, Python memperbolehkan untuk menggunakan petik dua seperti kita menggunakan petik tunggal. Dalam kasus sebelumnya, kita cukup mengetik seperti berikut.
+
+    contoh_1 = "Where Your's Phone"
+
+    Dalam contoh di atas, Python mengenali bahwa petik tunggal adalah bagian tidak terpisahkan dari string tersebut. Bagaimana jika kita memerlukan kedua jenis petik dalam string tunggal? Python menyediakan escape character.
+
+    ! Escape character memungkinkan kita untuk menggunakan karakter yang sebelumnya tidak bisa dimasukkan dalam string. Umumnya diawali dengan backslash (\) dan diikuti karakter tertentu yang diinginkan. Contohnya, untuk petik tunggal kita dapat menambahkan \'.
+
+    contoh_1 = 'Where Your\'s Phone'
+
+    Python mengetahui bahwa pada your\'s, sebelum petik terdapat backslash (\) yang menandakan petik tunggal sebagai bagian dari string dan bukan akhir dari string. Escape character \' dan \" memungkinkan kita untuk memasukkan karakter ' dan '' dalam bagian string. Beberapa contoh escape character lainnya sebagai berikut. 
+
+    1. \' Single quote
+    2. \" Double quote
+    3. \t Tab
+    4. \n Newline (line break)
+    5. \\ Backslash
+'''
+
+# Contoh Keseluruhan Penggunaan
+print("> Contoh Penerapan String Literals")
+print('Helo, siapakah namamu?\n\'Namaku adalah Jajang\'\nOh, Halo Jajang senang berkenalan denganmu.\t Jajang pun senang')
+
+
+'''
+Output : 
+'Namaku adalah Jajang'
+Oh, Halo Jajang senang berkenalan denganmu.      Jajang pun senang
+
+Mengapa bisa begitu ya karena kita menggunakan \n(Line Break), \' (Single Quote) dan \t(Tab)
+'''
+
+# -------------------------------------------- Raw String ------------------------------------
+print("Raw String".center(148,'-'))
+
+'''
+Python juga menyediakan cara untuk mencetak string sesuai dengan apa pun input atau teks yang diberikan. Metode ini dinamakan raw strings. Umumnya, ia digunakan untuk regex atau beberapa implementasi lain yang sangat bergantung pada keberadaan backslash. Untuk mengimplementasikan raw strings, sisipkan huruf r sebelum pembuka string.
+
+    Liat Contoh Di Bawah :
+'''
+
+# Contohnya
+print("> Contoh Penerapan Raw String(r)")
+print(r"Where\'\tWhere\'\t")
+
+# Output : Where\'\tWhere\'\t, Maka Perhatikan bahwa escape character (\') dan (\t) ikut tercetak pada teks tersebut. Hal ini karena raw string akan mencetak string sesuai dengan apa pun input atau teks yang diberikan. Jadi ketika kita menggunakan raw string kita tidak lagi memerlukan escape karakter tetapi kekurangannya hanya bisa bergungsi satu baris saja tidak multicolumn.
+
+print("> Contoh Yang Benar Untuk Penggunaan Raw String (r)")
+print(r"Where's my phone, anyone can u help me to find my phone's ")
+
+# Output : Where's my phone, anyone can u help me to find my phone's, Bisa kita lihat dengan jelas kita tidak lagi memerlukan escape karakter disini, tetepi memiliki kekurangan tidak bisa menggunakan enter atau multiple-column.
+
+
 
 
 
