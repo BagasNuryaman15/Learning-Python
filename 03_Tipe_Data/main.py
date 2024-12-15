@@ -73,6 +73,7 @@ Sekarang mari kita fokus terhadap berbagai tipe data pada Python. Dalam Python, 
 """
 
 # ============================================================ Tipe Data Primitif ===================================
+print("Tipe Data Primitif".center(150))
 # Tipe data primitif merupakan jenis paling dasar dalam pemrograman. Tipe data ini menyimpan single value. Berikut adalah berbagai tipe data primitif.
 
 

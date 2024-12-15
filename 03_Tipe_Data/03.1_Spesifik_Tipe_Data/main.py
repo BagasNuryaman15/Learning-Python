@@ -366,7 +366,9 @@ print(r"Where's my phone, anyone can u help me to find my phone's ")
 
 
 
+print(" ".center(150,'-'))
 # ======================================= 2. Tipe Data integer (int) ================================== 
+print(" Tipe Data Integer (str) ".center(150))
 """
 
 Tipe Data Integer (int) sering digunakan untuk menuliskan sebuah angka bulat (tanpa desimal) baik poitif atau negatif asalkan tidak desimal maka akan bisa kalian gunakan dan jalankan. Tipe Data Integer juga sering disebut dengan Tipe Data Angka Satuan, nah Tipe Data Integer tidak boleh menggunaka String atau tanda kutip ganda karena itu akan membuat miss komunikasi antara kompeter dan syntax yang kita buat, maka hindarilah menggunakan tanda kutip ganda jika kamu ingin membuat sebuah Tipe Data Integer (int). Ciri cirinya bisa kita lihat yaitu 1. Bilangan Bulat: Tidak mengandung bagian desimal. 2. Rentang Luas: Python dapat menyimpan bilangan bulat dalam rentang yang sangat besar, dibatasi hanya oleh memori yang tersedia. 3. Operasi Matematika: Integer mendukung semua operasi aritmetika dasar seperti penjumlahan, pengurangan, perkalian, dan sebagainya.
@@ -393,6 +395,7 @@ print(b)   # Output: -3
 print(c, type(c))   # Output: 0
 
 # --------------------------------------- Menggunakan Operasi (Math) ke dalam Tipe Data Integer (Int)---------------------------------
+print(" Menggunakan Operasi Matematika (artimatika) ".center(70, '-'))
 # Penjumlahan (+)
 plus = "> Ini adalah contoh penjumlahan (+)"
 print (plus)
@@ -455,11 +458,13 @@ print("Bukan sulap bukan sihir tapi dari string bisa jadi integer keren bukan ",
 
 
 # ======================================= 3. Tipe Data FLoat ================================== 
+print(" Tipe Data Float ".center(150, '-'))
 """
 Tipe Data Float adalah Tipe Data yang digunakan atau menuliskan sebuah angka yang desimal atau pecahan, ciri ciri Tipe Data ini adalah selalu menggunakan titik, ya namanya juga bilangan desimal atuh kang. Perlu kalian ingat juga float sama dengan integer bisa menggunakan negatif atau positif. Dapat mewakili nilai yang lebih besar atau lebih kecil dengan ketelitian tinggi. Digunakan dalam komputasi matematika dan statistik.
 """
 
 # Pembatas
+print
 contoh_float = "= <Tipe Data Float>"
 print (contoh_float)
 
@@ -478,6 +483,7 @@ print(b)     # Output: -0.75
 print(c)     # Output: 0.0
 
 # --------------------------------------- Menggunakan Operasi (aritmatika) ke dalam Tipe Data Float---------------------------------
+print("Operasi Matematika Untuk Tipe Data Float".center(80,'-'))
 # Sama saja seperti integer float dapat kita gabungkan dengan operasi matematika tetapi ada tambahana untuk float.
 
 # Pembagian (/) inilah tambahanya
@@ -489,6 +495,7 @@ pembagian = 7.5 / 2.5
 print(pembagian) # Output: 3.0
 
 # Sama halnya dengan Tipe Data yang lain Float juga dapat mengkonversi
+print("> Contoh Konversi Float")
 # Dari Integer ke Float
 x = float(5)
 print(x)  # Output: 5.0
@@ -641,7 +648,7 @@ print(not b)  # Output: True
 
 
 
-# ========================================5. Tipe Data List====================================
+# ======================================== 5. Tipe Data List====================================
 """
 
 Tipe Data List adalah Salah satu tipe data yang digunakan untuk menyimpan sekumpulan item (atau elemen) dalam satu variabel. Yang dimana bisa mengelompokan berbagai jenis Tipe Data seperti  string, integer, float dan boolean bahkan Tipe Data lainnya kedalam satu variable.  List bisa berisi data yang terurut dan dapat diubah, yang artinya kita bisa menambah, menghapus, atau mengubah item di dalamnya. List ditandai dengan tanda kurung siku [], dan setiap elemen di dalamnya dipisahkan dengan koma. 
