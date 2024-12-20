@@ -1,4 +1,4 @@
-# ======================================================= Data Typing =======================================
+# ============================================================= Data Typing ==============================================
 """ 
 
 Sebelum kita mendalami apa itu Tipe Data kita harus mengenali apa itu Data Typing. Data Typing adalah pemahaman kita memahami bahwa komputer perlu mengetahui data yang diinginkan dengan cara melakukan deklarasi. Sebelum memahami berbagai tipe data yang umum digunakan dalam Python, kita harus mengenal terlebih dahulu cara menuliskan data dalam pemrograman.
@@ -119,21 +119,21 @@ print(a)
 print(type(a))
 
 # Implementasi data float ke dalam Python
-print(">Implementasi data float ke dalam Python")
+print("> Implementasi data float ke dalam Python")
 
 b = 10.5
 print(b)
 print(type(b))
 
 # Implementasi data complex ke dalam Python
-print(">Implementasi data complex ke dalam Python")
+print("> Implementasi data complex ke dalam Python")
 
 c = 10+5j
 print(c)
 print(type(c))
 
 # Perlu diperhatikan bahwa tipe data numbers bersifat immutable yang artinya nilai di dalamnya tidak dapat diubah. Mari lihat contoh di bawah ini.
-print(">Perlu diperhatikan bahwa tipe data numbers bersifat immutable yang artinya nilai di dalamnya tidak dapat diubah.")
+print("> Perlu diperhatikan bahwa tipe data numbers bersifat immutable yang artinya nilai di dalamnya tidak dapat diubah.")
 
 var = 10
 print(var)
@@ -171,7 +171,7 @@ Selain itu, tipe data boolean juga memiliki fungsi yang berguna untuk memeriksa 
 """
 
 # Implementasi data boolean ke dalam Python
-print("=Implementasi data boolean ke dalam Python")
+print("= Implementasi data boolean ke dalam Python")
 x = True
 print(type(x))
 
@@ -195,7 +195,7 @@ Dari kode di atas dapat Anda pahami bahwa nilai True dan False merupakan data be
 """
 
 # Implementasi data string ke dalam Python
-print("=Implementasi data string ke dalam Python")
+print("= Implementasi data string ke dalam Python")
 x = "Dicoding"
 print(type(x))
 
@@ -211,7 +211,7 @@ Variabel x yang menyimpan teks “Dicoding” adalah variabel dengan data bertip
 # 1. kita dapat menggunakan tiga single quote atau double quote untuk menyimpan string yang lebih dari satu baris (multi-line).
 
 # contohnya 
-print(">Multi Line String")
+print("> Multi Line String")
 
 kata = """Helo Semuanya Saya Jajang
 Saha maneh jajang eweuh nu nanya ge
@@ -227,7 +227,7 @@ print(type(kata))
 # 3. String merupakan immutable. Artinya, tipe data string bersifat immutable. Hal ini berarti Anda tidak dapat mengubah nilai string. Mari kita lihat contoh di bawah ini.
 
 # contoh
-print(">String merupakan immutable")
+print("> String merupakan immutable")
 
 # x = "Dicoding"
 # x[0] = "F"

@@ -27,7 +27,8 @@
 
 
 # ======================================= 1. Tipe Data String (str) ======================================
-print("Tipe Data String(str)".center(150, "="))
+title = 'Tipe Data String (str)'.center(150, "*")
+print(title) 
 
 """ 
 Tipe Data String sering digunakan untuk menulis sebuah kumpulan teks atau karakter dengan cirinya adalah di kelilingi oleh tanda kutip ganda (" Contoh ") dan tanda kutip tunggal (' Contoh '), String juga bersifat imutable (Tidak bisa diubah) setelah string dibuat isinya tidak dapat dirubah, Bisa menggunakan tanda kutip kosong dan bisa menggunakan spasi. Nah kita bisa menggunakan tanda kutip ganda dan tunggal secara bersamaan, namun perlu kalian ingat jika kalian mencampuri keduanya kalian akan kebingunan sendiri, maka disini saya akan memakai tanda kutip ganda saja (" "). Nah karaktersitiknya yaitu 1. Teks atau urutan karakter. 2. Dapat mencakup huruf, angka, simbol, dan spasi.
@@ -38,7 +39,7 @@ string = ("<Tipe Data String (str)>".center(50, "-"))
 print (string)
 
 # Contoh Tipe Data STRING (str)
-contoh_str = "= Contoh Tipe Data String (str)"
+contoh_str = "= Contoh Tipe Data String (str)\n"
 print (contoh_str)
 
 # Contoh Penerapannya
@@ -163,6 +164,7 @@ print ("> Ini Adalah Contoh Menggunakan starwith()")
 print ("Bagas Ganteng".startswith("Bagas"))
 
 # Output : True, karena string yang bertuliskan Bagas memang ada pada awal kalimat Bagas Ganteng.  Jika awalan nya bukan string yang sama maka hasilnya akan False
+
 # Nah ada juga yang mencari akhiran kata, kita bisa menggunakan endswith (). 
 
 # ------------------------------- Memisah dan Menggabung String ---------------------------
@@ -368,7 +370,7 @@ print(r"Where's my phone, anyone can u help me to find my phone's ")
 
 print(" ".center(150,'-'))
 # ======================================= 2. Tipe Data integer (int) ================================== 
-print(" Tipe Data Integer (str) ".center(150))
+print(" Tipe Data Integer (int)".center(150))
 """
 
 Tipe Data Integer (int) sering digunakan untuk menuliskan sebuah angka bulat (tanpa desimal) baik poitif atau negatif asalkan tidak desimal maka akan bisa kalian gunakan dan jalankan. Tipe Data Integer juga sering disebut dengan Tipe Data Angka Satuan, nah Tipe Data Integer tidak boleh menggunaka String atau tanda kutip ganda karena itu akan membuat miss komunikasi antara kompeter dan syntax yang kita buat, maka hindarilah menggunakan tanda kutip ganda jika kamu ingin membuat sebuah Tipe Data Integer (int). Ciri cirinya bisa kita lihat yaitu 1. Bilangan Bulat: Tidak mengandung bagian desimal. 2. Rentang Luas: Python dapat menyimpan bilangan bulat dalam rentang yang sangat besar, dibatasi hanya oleh memori yang tersedia. 3. Operasi Matematika: Integer mendukung semua operasi aritmetika dasar seperti penjumlahan, pengurangan, perkalian, dan sebagainya.
