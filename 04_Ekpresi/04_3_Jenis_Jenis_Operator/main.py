@@ -236,16 +236,13 @@ print("="*40 + "\n")
                                                             Operator Assignment
 Operator selanjutnya adalah assignment. Operator ini bertujuan untuk melakukan proses assignment atau pemberian nilai pada suatu variabel dengan nilai tetap. Perhatikan tabel di bawah ini untuk memahami contoh penerapan operator assignment. Asumsikan x bernilai 11 dan y bernilai 5.
 
-    Operator	Contoh	                Eksekusi
-    =	        x = 11	                x bernilai 11
-    +=	        x += 1	                x bernilai 12
-    -=	        x -= 1	                x bernilai 10
-    *=	        x *= 2	                x bernilai 22
-    /=	        x /= 2	                x bernilai 5.5
-    //=	        x //= 2             	x bernilai 5
-    %=	        x %= 2	                x bernilai 1
-    **=	        x **= 2             	x bernilai 121
-
+    Operator	Deskripsi                                                   Contoh
+    +=          Menyederhanakan operasi x = x + y.                          x += y, menghasilkan nilai 16.
+    -=          Menyederhanakan operasi x = x - y.                          x -= y, menghasilkan nilai 6.
+    *=          Menyederhanakan operasi x = x * y.                          x *= y, menghasilkan nilai 55.
+    /=          Menyederhanakan operasi x = x / y.                          x /= y, menghasilkan nilai 2.2.
+    %           Menyederhanakan operasi x = x % y.                          x %= y, menghasilkan nilai 1
+   
     Sederhananya, seluruh operator di atas setara dengan x = x <operator> y. Biasanya, Anda akan sering menjumpai operator assignment ini pada perulangan (Anda akan mempelajarinya nanti). Perulangan pada pemrograman berarti Anda membuat sebuah program yang akan terus berulang hingga berakhir karena suatu kondisi. Salah satu caranya agar dapat terus berulang adalah dengan menambahkan operator assignment. 
 '''
 
