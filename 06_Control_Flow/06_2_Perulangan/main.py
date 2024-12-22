@@ -1,8 +1,7 @@
 from typing import Counter
 
-
 print("\n"," Perulangan ".center(150, "="))
-# ================================================================================= Perulangan =============================================================
+# ============================================================= Perulangan =============================================================
 '''
                                                                 Perulangan
 
@@ -191,6 +190,7 @@ Jika Anda menjalankan kode di atas pada IDE seperti notebook, program akan terus
 
 
 # ============================================================= For Bersarang ============================================================
+print(" 3. For Bersarang (nested loop) ".center(100, "-"), "\n")
 '''
                                                                 For Bersarang
 
@@ -208,26 +208,267 @@ Anda dapat asumsikan bahwa ada dua perulangan, yakni "perulangan luar" dan "peru
 # Mari kita lihat implementasi dari for bersarang.
 for i in range(1, 4):
     for j in range(1, 3):
-        print(f"Ini adalah variable_luar = {i} dan variable_dalam --> {j}")
+        print(f"Ini adalah loop_luar = {i} dan loop_dalam --> {j}")
 
 '''
 Output :
-Ini adalah variable_luar = 1 dan variable_dalam --> 1
-Ini adalah variable_luar = 1 dan variable_dalam --> 2
-Ini adalah variable_luar = 2 dan variable_dalam --> 1
-Ini adalah variable_luar = 2 dan variable_dalam --> 2
-Ini adalah variable_luar = 3 dan variable_dalam --> 1
-Ini adalah variable_luar = 3 dan variable_dalam --> 2
+Ini adalah loop_luar = 1 dan loop_dalam --> 1
+Ini adalah loop_luar = 1 dan loop_dalam --> 2
+Ini adalah loop_luar = 2 dan loop_dalam --> 1
+Ini adalah loop_luar = 2 dan loop_dalam --> 2
+Ini adalah loop_luar = 3 dan loop_dalam --> 1
+Ini adalah loop_luar = 3 dan loop_dalam --> 2
 
 Pada contoh implementasi di atas, kita melakukan perulangan for luar dengan variabel "i" yang mengulang dari 1 hingga 3. Lalu melakukan perulangan "j" yang akan mengulang dari 1 hingga 3 juga.
 
             for i in range(1, 4) ------------------------------------------------------------------------
             ---- for j in range(1, 3)                                                                    = Outer Loop
-Inner Loop  = ---- print(f"Ini adalah variable_luar = {i} dan variable_dalam --> {j}") ------------------
+Inner Loop  = ---- print(f"Ini adalah loop_luar = {i} dan loop_dalam --> {j}")---------------------------
 
+
+Output :
+                        ----Ini adalah loop_luar = 1 dan loop_dalam --> 1
+                        |   Ini adalah loop_luar = 1 dan loop_dalam --> 2
+ Hasil Outer Loop ----> |   Ini adalah loop_luar = 2 dan loop_dalam --> 1 ------> Hasil Inner Loop
+                        |   Ini adalah loop_luar = 2 dan loop_dalam --> 2
+                        |   Ini adalah loop_luar = 3 dan loop_dalam --> 1
+                        ----Ini adalah loop_luar = 3 dan loop_dalam --> 2
     
 Output dari sebelah kiri dihasilkan dari perulangan for luar, sedangkan output dari sebelah kanan dihasilkan dari perulangan for dalam. Perhatikan lebih detail bahwa "perulangan luar" atau outer loop akan dilanjutkan jika "perulangan dalam" atau inner loop telah selesai. Semua perulangan tersebut dilakukan hingga kedua perulangan menghasilkan false dan berhenti.
 '''
+
+
+
+# ========================================================== Kontrol Perulangan ============================================================
+print("\n")
+print(" 4. Kontrol Perulangan ".center(100, "-"), "\n")
+'''
+                                                                Kontrol
+                                                               Perulangan
+
+Selain membuat perulangan, kita juga dapat mengontrol perulangan dengan menggunakan beberapa pernyataan di antaranya sebagai berikut.
+
+    1. Break
+    Break statement adalah pernyataan untuk menghentikan perulangan dan kemudian program akan otomatis keluar dari perulangan tersebut, lalu dilanjutkan dengan mengeksekusi blok perulangan selanjutnya. Jika Anda memiliki perulangan yang bertingkat seperti for bersarang, break akan menghentikan perulangan sesuai dengan tingkatan atau letak perulangannya berada.
+    2. Continue
+    Continue statement adalah pernyataan untuk membuat iterasi berhenti, kemudian melanjutkan ke iterasi berikutnya. Continue seolah mengabaikan pernyataan    (statement) yang berada antara continue hingga akhir blok.
+    3. Else Setelah For Pada Python juga dikenal else setelah for yang berfungsi untuk perulangan bersifat pencarian. Else setelah for ini bisa dikatakan sebagai memberikan jalan keluar program saat pencarian tidak ditemukan.
+    4. Else setelah While Berbeda dengan else setelah for, pada statement else setelah while, blok statement else akan selalu dieksekusi saat kondisi pada while menjadi salah. 
+    5. Pass statement adalah pernyataan yang digunakan jika Anda menginginkan sebuah pernyataan atau blok pernyataan (statement), tetapi tidak ada tindakan atau program tidak melakukan apa pun. Dengan kata lain, pass digunakan untuk menghindari error saat Anda belum menulis kode di dalam blok tertentu (seperti di dalam fungsi, loop, atau kondisi), tetapi Anda ingin kode tersebut tetap ada.
+    6. List comprehension adalah cara yang lebih singkat dan elegan untuk membuat list baru dengan cara mengiterasi elemen dari iterable lain (seperti list, tuple, string, atau range), dan menerapkan operasi atau kondisi tertentu pada elemen-elemen tersebut. Secara umum, list comprehension memungkinkan Anda membuat list baru dalam satu baris kode, yang sebelumnya mungkin memerlukan beberapa baris menggunakan loop biasa.
+
+    Sintaks dasar list comprehension adalah sebagai berikut:
+
+       [expression for item in iterable if condition]
+
+    •	expression: Ini adalah ekspresi yang akan diterapkan pada setiap elemen dari iterable.
+	•	item: Variabel yang mewakili setiap elemen dari iterable.
+	•	iterable: Objek yang dapat diiterasi (seperti list, string, atau range).
+    •   Kalau kondisi pasti sudah kalian tau lah ya.
+'''
+
+# =================== Break Statement =================
+# Contoh Break statement
+print(" 1. Break Statement ".center(50, ("-")), "\n")
+print("> Contoh penggunaan break statment", "\n")
+
+for i in range(1, 3):
+    for j in range(1, 11):
+        print(f"Loop Luar = {i} -----> Loop Dalam = {j}")
+        if j == 5:
+            break # Ini artinya untuk menghentikan perulangan Loop Dalam jika Loop dalam == 5
+
+'''
+Output :
+
+Loop Luar = 1 -----> Loop Dalam = 1
+Loop Luar = 1 -----> Loop Dalam = 2
+Loop Luar = 1 -----> Loop Dalam = 3
+Loop Luar = 1 -----> Loop Dalam = 4
+Loop Luar = 1 -----> Loop Dalam = 5
+Loop Luar = 2 -----> Loop Dalam = 1
+Loop Luar = 2 -----> Loop Dalam = 2
+Loop Luar = 2 -----> Loop Dalam = 3
+Loop Luar = 2 -----> Loop Dalam = 4
+Loop Luar = 2 -----> Loop Dalam = 5
+
+Pada kode di atas, kita melakukan perulangan untuk menampilkan bilangan 1 hingga 3 pada "perulangan luar" atau for pertama. Lalu, kita membuat perulangan kedua untuk menampilkan bilangan dari 1 hingga 11. Namun, pada perulangan kedua atau "perulangan dalam" tersebut, kita akan melakukan break jika bertemu angka 5. Alhasil, perulangan dalam hanya akan menampilkan angka hingga 1 sampai 5 saja. Program akan berhenti karena ada statement break yang diberikan jika bertemu angka 5.
+'''
+
+# Contoh lainnya sebagai berikut.
+print("\n")
+print("> Contoh penggunan break statement dengan string(str)", "\n")
+
+for huruf in "Bagas Ga Ganteng":
+    if huruf == " ":
+        break
+    print('Huruf saat ini: {}'.format(huruf))
+
+'''
+Output :
+Huruf saat ini: B
+Huruf saat ini: a
+Huruf saat ini: g
+Huruf saat ini: a
+Huruf saat ini: s
+
+Pada contoh di atas, program akan berhenti jika bertemu huruf " " (spasi) yang berada pada teks "Bagas Ga Ganteng". Ini menunjukan bahwa BAGAS tuh GANTENG ABIEZZ! 
+'''
+
+
+
+
+# ================== Continue Statement =================
+print("\n")
+print(" 2. Continue Statement ".center(50, ("-")), "\n")
+print("> Contoh penggunaan continue statment", "\n")
+
+# Contoh Penerapan Break Statement
+for h in "Bagas Jelek Ganteng".split():
+    if h == "Jelek":
+        continue
+    print(f"Iterasi Huruf Saat Ini = {h}")
+
+''' 
+Output :
+
+Iterasi Huruf Saat Ini = Bagas
+Iterasi Huruf Saat Ini = Ganteng
+
+Pada contoh di atas, kita membuat perulangan yang sama dengan contoh sebelumnya. Namun, sekarang kita menambahkan split() kepada string yang menyebabkan huruf dalam string menjadi kelompok list, dan kita menggunakan continue untuk membuat program melanjutkan dan melewati kata "Jelek". 
+'''
+
+
+
+# ================== Else setelah for =================                                                
+print("\n")
+print(" 3. Else setelah for ".center(50, ("-")), "\n")
+print("> Contoh penggunaan Else setelah for", "\n")
+
+# Contoh penerapan Else setelah for
+numbers = [1, 2, 3, 4, 5, 6]
+
+for num in numbers:
+    if num == 10:
+        print("Oh ini dia ada angkanya, program dihentikan!")
+        break # Loop dihentikan karena angka 10 ditemukan
+
+else: 
+    print("Waduh kak mohon maaf angka tidak di temukan nih") # Hanya dijalankan jika tidak ada `break`
+
+'''
+Output :
+
+Waduh kak mohon maaf angka tidak di temukan nih
+
+Pada contoh di atas, kita membuat program untuk melakukan pencarian terhadap bilangan 10. Jika bilangan 10 tersebut merupakan elemen atau nilai yang berada pada list, program akan berhenti dan menampilkan teks "Oh ini dia ada angkanya, program dihentikan!".
+
+Namun, pada contoh di atas angka 10 bukan merupakan elemen dari list maka program akan menampilkan teks "Waduh kak mohon maaf angka tidak di temukan nih". Apa jadinya jika program menemukan angka? Silakan ganti "if num == 10" dengan "if num == 2" atau angka lain yang merupakan nilai yang berada dalam list.
+
+Perlu diperhatikan oleh Anda, if dan else pada contoh tersebut berkaitan walaupun berbeda blok. Pada else setelah for, statement else tidak akan dieksekusi saat if pernah sekali saja benar. Dengan kata lain, break dalam if tidak akan terjadi untuk memicu else setelah for. Jadi pada intinya break tidak akan mempengaruhi else karena else setelah for mempunyai sifat Digunakan untuk menjalankan sesuatu setelah semua iterasi pada loop for selesai tanpa break. Sangat berguna, misalnya, untuk mengecek apakah semua item dalam iterasi telah diproses.
+'''
+
+
+
+# ================== Else setelah while =================   
+print("\n")
+print(" 4. Else setelah while ".center(50, ("-")), "\n")
+print("> Contoh penggunaan Else setelah while", "\n")
+
+# Contoh penerapan Else setelah for
+target = 5
+guess = 0
+attempts = 0
+max_attempts = 3
+guessed_correctly = False  # Flag untuk menandai jika angka telah ditebak
+
+while guess != target:
+    if attempts >= max_attempts:
+        print(f"Program dihentikan! Anda telah mencoba sebanyak {attempts} kali.")
+        break
+    
+    guess = int(input("Tebak angka (1-10): "))
+    attempts += 1
+    
+    if guess == target:
+        print(f"Selamat! Anda menebak dengan benar dalam {attempts} percobaan.")
+        guessed_correctly = True  # Tandai bahwa angka telah ditebak
+        break
+    elif guess > 1000:
+        print("Angka terlalu besar, coba angka di bawah 1000.")
+    else:
+        print("Silahkan coba lagi sampai berhasil.")
+        quest = input("Apakah ingin melanjutkan [y/n]? ").lower()
+        if quest == "n":
+            print(f"Program dihentikan! Anda telah mencoba sebanyak {attempts} kali.")
+            break
+else:
+    if not guessed_correctly:
+        print(f"Anda telah mencapai batas percobaan ({max_attempts}) tanpa menebak angka yang benar.")
+
+'''
+Kapan Blok else Dieksekusi?
+
+Blok else pada while dieksekusi jika loop berhenti karena kondisi menjadi False, bukan karena perintah break.
+	•	Kasus: Menebak dengan benar
+	    •	Jika Anda menebak angka dengan benar (guess == target), program akan masuk ke perintah break.
+	    •	Karena ada break, blok else tidak akan dijalankan.
+	    •	Namun, jika else tetap dieksekusi, itu terjadi karena break tidak benar-benar menghentikan eksekusi else.
+	•	Kasus: Mencapai batas percobaan
+	    •	Jika Anda mencapai batas percobaan tanpa menebak angka dengan benar (attempts >= max_attempts), loop dihentikan oleh break.
+	    •	Blok else juga tidak dijalankan karena ada break.
+
+while tersebut masih bernilai benar walaupun program keluar karena "break". 
+'''
+
+
+# ================== Pass Statement ================== 
+print("\n")
+print(" 5. Pass Statement ".center(50, ("-")), "\n")
+print("> Contoh penggunaan Pass Statment", "\n")
+
+# Contoh penerapan pass statement
+x = 10
+
+if x > 5:
+    pass
+else:
+    print("Nilai x tidak memenuhi kondisi")
+
+"""
+Output:
+
+
+Program di atas tidak menampilkan apa pun karena jika kondisi terpenuhi, program tidak akan melakukan apa pun.
+
+Statement pass digunakan dalam situasi-situasi ketika Python memerlukan adanya pernyataan, tetapi tidak memiliki tindakan yang perlu dilakukan pada saat itu. Biasanya itu adalah kondisi ketika Anda membutuhkan placeholder untuk menunjukkan bahwa tidak ada operasi yang perlu dilakukan. Hal ini dapat membantu kita mengatur struktur kode secara rapi dan memungkinkan penambahan implementasi di kemudian hari.
+"""
+
+
+
+# ================== List Comprehension ==================
+print("\n")
+print(" 6. List Comprehension ".center(50, ("-")), "\n")
+print("> Contoh penggunaan List Comprehension", "\n")
+
+# Contoh penerepan List Comprehension yang umum tanpa kondisi
+print("= Contoh Dengan Non Kondisi", "\n")
+angka = [1, 2, 3, 4]
+pangkat = [n**2 for n in angka]
+print(pangkat, "\n")
+
+'''
+Output:
+[1, 4, 9, 16]
+'''
+
+# Contoh penerapan List Comprehension dengan kondisi
+print("= Contoh Dengan Kondisi", "\n")
+penggabungan = [(angka1, angka2) for angka1 in range(3) for angka2 in range(1, 4)]
+for angka1, angka2 in penggabungan:
+    print(f"Iterasi Perulangan Luar -----> {angka1} dan Iterasi Perulangan Dalam {angka2}")
+
+ 
 
 
 
