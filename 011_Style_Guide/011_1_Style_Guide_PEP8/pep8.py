@@ -56,4 +56,52 @@ Pada materi kali ini, kita akan mempelajari beberapa aplikasi yang dapat Anda gu
         a.  Pycodestyle
             Untuk menguji menggunakan pycodestyle, jalankan kode berikut.
                 pycodestyle kalkulator.py
+
+            Output yang akan dihasilkan adalah ini :
+            kalkulator.py:1:2: E111 indentation is not a multiple of 4
+            kalkulator.py:1:2: E113 unexpected indentation
+            kalkulator.py:2:13: E117 over-indented
+            kalkulator.py:5:13: E301 expected 1 blank line, found 0
+            kalkulator.py:7:13: E112 expected an indented block
+            kalkulator.py:7:31: W292 no newline at end of file
+
+            Gambar di atas adalah tampilan terminal ketika Anda menjalankan script menggunakan pycodestyle.
+
+        b.  pylint
+            Untuk menguji menggunakan pylint, jalankan kode berikut.
+                pylint kalkulator.py
+            Output yang dihasilkan adalah berikut.
+
+            ************* Module kalkulator
+            kalkulator.py:1:1: E0001: Parsing failed: 'unexpected indent (kalkulator, line 1)' (syntax-error)
+
+            Gambar di atas adalah tampilan terminal ketika Anda menjalankan script menggunakan pylint
+
+        c.  flake8
+            Untuk menguji menggunakan flake8, jalankan kode berikut.
+                flake8 kalkulator.py 
+            Outputnya :
+            kalkulator.py:1:2: E999 IndentationError: unexpected indent
+
+    Pesan dari ketiga aplikasi tersebut ternyata beragam, tetapi ada satu kesamaan, yakni ketiganya menunjukkan pola yang sama di awal pesan berupa nama file diikuti dengan baris dan kolom.
+
+    Mari perbaiki kodenya, silakan ganti dengan kode berikut.
+
+        class Kalkulator:
+            """kalkulator tambah kurang"""
+            def __init__(self, _i):
+                self.i = _i
+
+            def tambah(self, _i): return self.i + _i
+
+            def kurang(self, _i):
+                return self.i - _i
+
+    Pada kode di atas, kita telah melakukan beberapa perbaikan. Pertama adalah kita menambahkan new line (garis baru) pada setiap penulisan setelah blok fungsi, sekarang setiap fungsinya dipisahkan oleh satu baris kosong. Kedua, kita menambahkan indentasi pada metode "kurang". 
+
+    Kemudian jalankan kembali file tersebut menggunakan ketiga aplikasi yang sebelumnya digunakan.
+
+    Jika diproses menggunakan pycodestyle dan flake8, itu tidak akan memunculkan pesan seperti gambar di bawah ini. Hal ini berarti menjelaskan kodenya sudah lebih baik.
+
+    Namun, ketika Anda menjalankannya menggunakan pylint, beberapa pesan peringatan muncul. Hal ini karena kita perlu menambahkan dokumentasi pada setiap fungsi dan kelas yang dibangun. Tidak apa-apa, itu merupakan peringatan untuk membuat kode kita lebih sempurna.
 '''
